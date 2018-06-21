@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(222, 223, 238);
+}
+.container {
+    width: 890px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid rgb(44, 55, 119);
+    box-shadow: 10px 15px 5px rgb(187, 189, 214);
+}
+.container #quiz h1 {
+    text-align: center;
+}
+.container #quiz #questions {
+    color: rgb(0, 38, 255);
+    font-size: 30px;
+    padding: 5px 5px;
+}
+#btn1, #btn2, #btn3, #btn4 {
+    background-color: rgb(44, 55, 119);
+    color: #fff;
+    font-size: 20px;
+    width: 400px;
+    border: 1px solid #1d3c6a;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
