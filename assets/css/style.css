@@ -29,4 +29,11 @@ body {
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
 }
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+    background-color: #ddd;
+    color: black;
+}
+#btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {
+    outline: 0;
+}
 
