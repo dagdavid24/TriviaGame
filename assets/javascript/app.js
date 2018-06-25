@@ -23,7 +23,7 @@ function submissions(){
 	return false;
 }
 
-var total_seconds = 10;
+var total_seconds = 30;
 var c_minutes = parseInt(total_seconds/60);
 var c_seconds = parseInt(total_seconds%60);
 
