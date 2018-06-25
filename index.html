@@ -8,40 +8,70 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
         <!--grid-->
         <div id="quiz">
-            <h1>QUIZ</h1>
+            <h1>Soccer Trivia Quiz!</h1>
+            <h3>It's World Cup Season. Let's test your Soccer knowledge.</h3>
             <hr style="margin-top:20px">
-            <p id="questions"></p>
             <div class="buttons">
-                <!--<form action="">
-                    <input id="btn1" type="radio" name="gender" value="choice1"> 
+                <form onsubmit="return submissions()">
+                    <h4>1. Which country did Diego Maradonna play for?</h4>
+                    <input id="q1btn1" type="radio" name="q1" value="a"> a. Brazil
                     <br>
-                    <input id="btn2" type="radio" name="gender" value="choice2"> 
+                    <input id="q1btn2" type="radio" name="q1" value="b"> b. Costa Rica
                     <br>
-                    <input id="btn3" type="radio" name="gender" value="choice3"> 
+                    <input id="q1btn3" type="radio" name="q1" value="c"> c. Spain
                     <br>
-                    <input id="btn4" type="radio" name="gender" value="choice4"> 
-                </form>-->
-                <button id="btn1">
-                    <span id="choice1"></span>
-                </button>
-                <button id="btn2">
-                    <span id="choice2"></span>
-                </button>
-                <button id="btn3">
-                    <span id="choice3"></span>
-                </button>
-                <button id="btn4">
-                    <span id="choice4"></span>
-                </button>
+                    <input id="q1btn4" type="radio" name="q1" value="d"> d. Argentina
+
+                    <h4>2. Which country sacked their national team coach two days before their first World Cup 2018 match?</h4>
+                    <input id="q2btn1" type="radio" name="q2" value="a"> a. Germany
+                    <br>
+                    <input id="q2btn2" type="radio" name="q2" value="b"> b. Nigeria
+                    <br>
+                    <input id="q2btn3" type="radio" name="q2" value="c"> c. Spain
+                    <br>
+                    <input id="q2btn4" type="radio" name="q2" value="d"> d. Japan
+
+                    <h4>3. What is Cristiano Ronaldo's shirt number?</h4>
+                    <input id="q3btn1" type="radio" name="q3" value="a"> a. 9
+                    <br>
+                    <input id="q3btn2" type="radio" name="q3" value="b"> b. 10
+                    <br>
+                    <input id="q3btn3" type="radio" name="q3" value="c"> c. 7
+                    <br>
+                    <input id="q3btn4" type="radio" name="q3" value="d"> d. 2
+
+                    <h4>4. An offside is...</h4>
+                    <input id="q4btn1" type="radio" name="q4" value="a"> a. When a player overruns the last man of the opposite team before recieving a pass.
+                    <br>
+                    <input id="q4btn2" type="radio" name="q4" value="b"> b. When a fan runs onto the pitch to meet a player.
+                    <br>
+                    <input id="q4btn3" type="radio" name="q4" value="c"> c. When a goalkeeper picks up the ball after a player passes it to him with his feet.
+                    <br>
+                    <input id="q4btn4" type="radio" name="q4" value="d"> d. When a player is relieved of marking a specific opponent.
+
+                    <h4>5. What is the greatest sport in the world?</h4>
+                    <input id="q5btn1" type="radio" name="q5" value="a"> a. Football
+                    <br>
+                    <input id="q5btn2" type="radio" name="q5" value="b"> b. Soccer
+                    <br>
+                    <input id="q5btn3" type="radio" name="q5" value="c"> c. Fútbal
+                    <br>
+                    <input id="q5btn4" type="radio" name="q5" value="d"> d. Fußball
+                    <br><br>
+                    <input id="submit" type="submit" value="Submit Answers">
+                    <br><br>
+                </form>
             </div>
             <hr>
-            <footer>
-                <p id="progress">Question x of y</p>
-            </footer>
+            <br>
+            <div id="results">Results: </div>
         </div>
+    </div>
+    <div class="footer">
+        <p>Copyright ©</p>
     </div>
     <script src="assets/javascript/app.js"></script>
 </body>
