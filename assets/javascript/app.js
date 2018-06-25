@@ -8,17 +8,10 @@ function submissions(){
 	var q4 = document.forms["quizForm"]["q4"].value;
 	var q5 = document.forms["quizForm"]["q5"].value;
 	
-	for(i = 1; i <= result; i++){
-		if(eval('q'+i) == null || eval('q'+i) == ''){
-			alert('You missed question '+ i);
-			return false;
-		}
-	}
-	
-	var answers = ["d","c","d","a","b"];
+	var correctAnswers = ["d","c","d","a","b"];
 	
 	for(i = 1; i <= result;i++){
-		if(eval('q'+i) == answers[i - 1]){
+		if(eval('q'+i) == correctAnswers[i - 1]){
 			score++;
 		}
 	}
@@ -29,3 +22,22 @@ function submissions(){
 	
 	return false;
 }
+
+var total_seconds = 10;
+var c_minutes = parseInt(total_seconds/60);
+var c_seconds = parseInt(total_seconds%60);
+
+function checkTime(){
+    document.getElementById("quiz-timer").innerHTML = 'Time Left; ' + c_minutes + " minutes " + c_seconds + " seconds ";
+    if(total_seconds <=0) {
+        alert("Time's Up!");
+        setTimeout(submissions(), 1);
+    }
+    else {
+        total_seconds = total_seconds-1;
+        c_minutes = parseInt(total_seconds/60);
+        c_seconds = parseInt(total_seconds%60);
+        setTimeout("checkTime()", 1000);
+    }
+}
+setTimeout("checkTime()", 1000);
