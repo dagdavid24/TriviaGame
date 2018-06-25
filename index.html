@@ -5,64 +5,69 @@
     <meta charset="UTF-8">
     <title>Trivia Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
 </head>
 
 <body>
     <div id="container">
         <!--grid-->
         <div id="quiz">
-            <h1>Soccer Trivia Quiz!</h1>
-            <h3>It's World Cup Season. Let's test your Soccer knowledge.</h3>
+            <h1>Football Trivia Quiz!</h1>
+            <h3>It's World Cup Season. Let's test your Footy knowledge.</h3>
             <hr style="margin-top:20px">
             <div class="buttons">
-                <form onsubmit="return submissions()">
+                <form name="quizForm" onsubmit="return submissions()">
                     <h4>1. Which country did Diego Maradonna play for?</h4>
-                    <input id="q1btn1" type="radio" name="q1" value="a"> a. Brazil
+                    <input type="radio" name="q1" value="a" id="q1a">a. Brazil
                     <br>
-                    <input id="q1btn2" type="radio" name="q1" value="b"> b. Costa Rica
+                    <input type="radio" name="q1" value="b" id="q1b">b. Costa Rica
                     <br>
-                    <input id="q1btn3" type="radio" name="q1" value="c"> c. Spain
+                    <input type="radio" name="q1" value="c" id="q1c">c. Spain
                     <br>
-                    <input id="q1btn4" type="radio" name="q1" value="d"> d. Argentina
+                    <input type="radio" name="q1" value="d" id="q1d">d. Argentina
+                    <br>
 
                     <h4>2. Which country sacked their national team coach two days before their first World Cup 2018 match?</h4>
-                    <input id="q2btn1" type="radio" name="q2" value="a"> a. Germany
+                    <input type="radio" name="q2" value="a" id="q2a">a. England
                     <br>
-                    <input id="q2btn2" type="radio" name="q2" value="b"> b. Nigeria
+                    <input type="radio" name="q2" value="b" id="q2b">b. China
                     <br>
-                    <input id="q2btn3" type="radio" name="q2" value="c"> c. Spain
+                    <input type="radio" name="q2" value="c" id="q2c">c. Spain
                     <br>
-                    <input id="q2btn4" type="radio" name="q2" value="d"> d. Japan
+                    <input type="radio" name="q2" value="d" id="q2d">d. Germany
+                    <br>
 
                     <h4>3. What is Cristiano Ronaldo's shirt number?</h4>
-                    <input id="q3btn1" type="radio" name="q3" value="a"> a. 9
+                    <input type="radio" name="q3" value="a" id="q3a">a. 8
                     <br>
-                    <input id="q3btn2" type="radio" name="q3" value="b"> b. 10
+                    <input type="radio" name="q3" value="b" id="q3b">b. 2
                     <br>
-                    <input id="q3btn3" type="radio" name="q3" value="c"> c. 7
+                    <input type="radio" name="q3" value="c" id="q3c">c. 10
                     <br>
-                    <input id="q3btn4" type="radio" name="q3" value="d"> d. 2
+                    <input type="radio" name="q3" value="d" id="q3d">d. 7
+                    <br>
 
                     <h4>4. An offside is...</h4>
-                    <input id="q4btn1" type="radio" name="q4" value="a"> a. When a player overruns the last man of the opposite team before recieving a pass.
+                    <input type="radio" name="q4" value="a" id="q4a">a. When a player overruns the last man of the opposite team before recieving a pass.
                     <br>
-                    <input id="q4btn2" type="radio" name="q4" value="b"> b. When a fan runs onto the pitch to meet a player.
+                    <input type="radio" name="q4" value="b" id="q4b">b. When a fan runs onto the pitch to meet a player.
                     <br>
-                    <input id="q4btn3" type="radio" name="q4" value="c"> c. When a goalkeeper picks up the ball after a player passes it to him with his feet.
+                    <input type="radio" name="q4" value="c" id="q4c">c. When a goalkeeper picks up the ball after a player passes it to him with his feet.
                     <br>
-                    <input id="q4btn4" type="radio" name="q4" value="d"> d. When a player is relieved of marking a specific opponent.
+                    <input type="radio" name="q4" value="d" id="q4d">d. When a player is relieved of the task of marking a specific opponent.
+                    <br>
 
                     <h4>5. What is the greatest sport in the world?</h4>
-                    <input id="q5btn1" type="radio" name="q5" value="a"> a. Football
+                    <input type="radio" name="q5" value="a" id="q5a">a. Fútbal 
                     <br>
-                    <input id="q5btn2" type="radio" name="q5" value="b"> b. Soccer
+                    <input type="radio" name="q5" value="b" id="q5b">b. <strong>Football</strong>
                     <br>
-                    <input id="q5btn3" type="radio" name="q5" value="c"> c. Fútbal
+                    <input type="radio" name="q5" value="c" id="q5c">c. Soccer
                     <br>
-                    <input id="q5btn4" type="radio" name="q5" value="d"> d. Fußball
-                    <br><br>
-                    <input id="submit" type="submit" value="Submit Answers">
-                    <br><br>
+                    <input type="radio" name="q5" value="d" id="q5d">d. Fußball
+                    <br><br><br>
+
+                    <input type="submit" value="Submit Answers">
                 </form>
             </div>
             <hr>
@@ -73,7 +78,6 @@
     <div class="footer">
         <p>Copyright ©</p>
     </div>
-    <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>

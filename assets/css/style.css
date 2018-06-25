@@ -12,6 +12,7 @@ body {
     box-shadow: 10px 15px 5px rgb(187, 189, 214);
     margin-bottom: 80px;
 }
+
 #container #quiz h1, h3 {
     text-align: center;
 }
@@ -24,10 +25,6 @@ input[type='submit'] {
 }
 input[type='radio'] {
     cursor: pointer;
-}
-#submit:hover {
-    background-color: #ddd;
-    color: black;
 }
 #results {
     background: rgb(44, 55, 119);
